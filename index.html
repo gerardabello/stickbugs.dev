@@ -1,17 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<link href="https://fonts.googleapis.com/css?family=Rubik:900i" rel="stylesheet">
+
 <style>
-body {background-color: powderblue;}
-h1   {color: blue;}
-p    {color: red;}
+#bg-video{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#title {
+  font-size: 15vw;
+  color: #000000c9;
+  font-family: 'Rubik', sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  top: 10vh;
+}
+
+body, html {
+  margin: 0;
+}
 </style>
+
 </head>
 <body>
-
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-
+  <video id="bg-video" autoplay muted loop>
+    <source src="stickbug_dancing.mp4" type="video/mp4" />
+  </video> 
+  <div id="title">
+    STICKBUGS
+  </div>
 </body>
 </html>
 
