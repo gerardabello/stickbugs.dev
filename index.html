@@ -32,6 +32,37 @@
   top: 10vh;
 }
 
+@keyframes faces-animation {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+#faces {
+  display: flex;
+  position: fixed;
+  height: 200px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.face-group {
+  animation: faces-animation 5s linear infinite;
+  display: flex;
+  width: max-content;
+}
+
+.face {
+  width: 200px;
+  height: 200px;
+}
+
 body, html {
   margin: 0;
 }
@@ -44,6 +75,40 @@ body, html {
   </video> 
   <div id="title">
     STICKBUGS
+  </div>
+  <div id="faces">
+    <div class="face-group">
+      <img class="face" src="faces/enric.jpg"/>
+      <img class="face" src="faces/gerard.jpg"/>
+      <img class="face" src="faces/jose.jpg"/>
+      <img class="face" src="faces/yuri.jpg"/>
+      <img class="face" src="faces/mark.jpg"/>
+      <img class="face" src="faces/raquel.jpg"/>
+      <img class="face" src="faces/sancho.jpg"/>
+      <img class="face" src="faces/silvia.jpg"/>
+    </div>
+
+    <div class="face-group">
+      <img class="face" src="faces/enric.jpg"/>
+      <img class="face" src="faces/gerard.jpg"/>
+      <img class="face" src="faces/jose.jpg"/>
+      <img class="face" src="faces/yuri.jpg"/>
+      <img class="face" src="faces/mark.jpg"/>
+      <img class="face" src="faces/raquel.jpg"/>
+      <img class="face" src="faces/sancho.jpg"/>
+      <img class="face" src="faces/silvia.jpg"/>
+    </div>
+
+    <div class="face-group">
+      <img class="face" src="faces/enric.jpg"/>
+      <img class="face" src="faces/gerard.jpg"/>
+      <img class="face" src="faces/jose.jpg"/>
+      <img class="face" src="faces/yuri.jpg"/>
+      <img class="face" src="faces/mark.jpg"/>
+      <img class="face" src="faces/raquel.jpg"/>
+      <img class="face" src="faces/sancho.jpg"/>
+      <img class="face" src="faces/silvia.jpg"/>
+    </div>
   </div>
 </body>
 </html>
